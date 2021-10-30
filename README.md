@@ -1,8 +1,8 @@
 # v2t
  Python3 program to print a given number in words. The program handles till 9 digits numbers and  can be easily extended to 20 digit number
-# Python3 program to print a given number in words.
+ #Python3 program to print a given number in words.
 import re
-# strings at index 0 is not used, it is to make array indexing simple
+#strings at index 0 is not used, it is to make array indexing simple
 one = [ "", "one ", "two ", "three ", "four ",
 		"five ", "six ", "seven ", "eight ",
 		"nine ", "ten ", "eleven ", "twelve ",
@@ -10,12 +10,12 @@ one = [ "", "one ", "two ", "three ", "four ",
 		"sixteen ", "seventeen ", "eighteen ",
 		"nineteen "]
 
-# strings at index 0 and 1 are not used,they is to make array indexing simple
+#strings at index 0 and 1 are not used,they is to make array indexing simple
 ten = [ "", "", "twenty ", "thirty ", "forty ",
 		"fifty ", "sixty ", "seventy ", "eighty ",
 		"ninety "]
 
-# i is 1- or 2-digit number
+#i is 1- or 2-digit number
 def numToWords(i, s):
 
 	str = ""
@@ -32,7 +32,7 @@ def numToWords(i, s):
     
 	return str
 
-# Function to print a given number in words
+#Function to print a given number in words
 def convertToWords(i):
 
 	# stores word representation of given number i
@@ -64,16 +64,16 @@ def convertToWords(i):
 
 	return out
 
-# Driver code
+#Driver code
 
-# long handles upto 9 digit no
-# change to unsigned long long
+#long handles upto 9 digit no
+#change to unsigned long long
 i = float(input("enter the number :  "))
 
 if '.' in str(i):
     num1 = re.search("\.(.*)",str(i)).group(1)
 
-# convert given number in words
+#convert given number in words
 var1 = convertToWords(i) + f"{num1}/100 only"
 
 print(var1)
