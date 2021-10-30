@@ -66,8 +66,6 @@ def convertToWords(i):
 
 #Driver code
 
-#long handles upto 9 digit no
-#change to unsigned long long
 i = float(input("enter the number :  "))
 
 if '.' in str(i):
